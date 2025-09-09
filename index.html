@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Menu</title>
+  <!-- خط عربي -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #f6e9ec; /* وردي فاتح */
+      font-family: "Cairo", sans-serif;
+      color: #333;
+    }
+
+    nav {
+      background: #704c5e; /* موڤ غامق */
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      border-radius: 0 0 10px 10px;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav h2 {
+      margin: 6px 0 0;
+      font-size: 15px;
+      font-weight: 400;
+      opacity: 0.9;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .box {
+      background: #d8a7b1; /* وردي أغمق شوي */
+      border-radius: 12px;
+      text-align: center;
+      padding: 15px;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    }
+
+    .box img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .box p {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 0;
+      color: #fff;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin-top: 12px;
+      padding: 8px 0;
+      font-size: 14px;
+      font-weight: 600;
+      background: #fff;
+      color: #704c5e;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #f4f1f3;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Menu</h1>
+  <h2>قائمة الكوفي </h2>
+</nav>
+
+  <div class="menu-grid">
+    <div class="box">
+      <img src="cp.png.jpeg.jpg"  alt="burgr"
+      <p>سبانش لاتيه -15 ريال</p>
+      <button class="btn">اطلب الآن</button>
+    </div>
+
+    <div class="box">
+      <img src="tc.png.jpeg.jpg" alt="pizze">
+      <p>قهوة تركيه- 30 ريال</p>
+      <button class="btn">اطلب الآن</button>
+    </div>
+
+    <div class="box">
+      <img src="cp.png.jpeg.jpg" alt="shawarma">
+      <p>كابتشينو - 13 ريال</p>
+      <button class="btn">اطلب الآن</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+  font-family: "Tahoma", sans-serif;
+  background: linear-gradient(135deg, #fdf6f9, #f6e9ec); /* تدرج ناعم */
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  background-color: #9b6781; /* موف فاتح */
+  color: #fff;
+  padding: 16px;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+  width: fit-content;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fce4ec;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+h2 {
+  font-family: "Cairo", sans-serif; 
+  font-size: 20px;
+  color: #4b2e2e; 
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 22px;
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.box {
+  width: 170px;
+  height: 200px;
+  background-color: #f5c6d4; /* لون افتراضي وردي فاتح */
+  color: white;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:nth-child(2) {
+  background-color: #c7b8ea; /* بنفسجي فاتح */
+}
+
+.box:nth-child(3) {
+  background-color: #b3d9d3; /* تركواز باستيل */
+}
+
+.box:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.box img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.box p {
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: #fff;
+  color: #9b6781;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #fce4ec;
+  transform: scale(1.08);
+}
